@@ -1,0 +1,1 @@
+import '../style/contact.less';

@@ -1,0 +1,156 @@
+@baseColor:#16aff5;
+@baseFontColor:#323232;
+body{
+    background:#fff;
+}
+//banner
+.hhl-service{
+    height:600px;
+    background:url(../images/service_top.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hhl-s-ms{
+    height:100%;
+}
+.hhl-s-ms h3{
+    margin-bottom: 0;
+    font-size:60px;
+}
+.hhl-s-ms h4{
+    font-size:26px;
+    margin-top:30px;
+}
+
+//content
+.hhl-content{
+    color:@baseFontColor;
+    margin-top:100px;
+    margin-bottom:20px;
+}
+.plan-list>li{
+    box-sizing:border-box;
+    display:flex;
+    display:-webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    font-size:14px;
+    height: 70px;
+    line-height:70px;
+    padding:0 40px;
+    border:1px solid #acacac;
+    border-bottom:0;
+    cursor: pointer;
+}
+.plan-list>li:last-child{
+    border-bottom:1px solid #acacac;
+}
+.plan-list>li span{
+    font-family:'宋体';
+}
+.hhl-content .plan-list .active{
+    border:0;
+    border-left:2px solid #000;
+    background: @baseColor;
+    color:#fff;
+}
+.hhl-content .plan-list li:hover{
+    .hhl-content .plan-list .active;
+}
+.down-tit{
+    margin-top:50px;
+    margin-bottom:30px;
+    font-size:24px;
+}
+.hhl-down li{
+    box-sizing: border-box;
+    border:1px solid #dddddd;
+    height:58px;
+    line-height:58px;
+    padding:0 25px;
+    margin-bottom: 15px;
+    background:#f3f3f3;
+}
+.hhl-down li a{
+    display: inline-block;
+    margin-left:15px;
+    color:@baseFontColor;
+}
+.hhl-down li:hover{
+    background:@baseColor;
+    color:#fff;
+    a{
+        color:#fff;
+    }
+}
+.hhl-lianxi{
+    height:350px;
+    margin-top:35px;
+    padding:15px 45px;
+    background:#393939;
+    color:#fff;
+}
+.hhl-lianxi a:first-child{
+    display: block;
+    margin:30px 0;
+    font-size:14px;
+    color:@baseColor;
+}
+.hhl-lianxi h3{
+    margin:10px 0;
+    font-size:24px;
+}
+.hhl-lianxi p{
+    margin:40px 0;
+    color:#bbbbbb;
+    font-size:16px;
+}
+.hhl-lianxi a:last-child{
+    display: block;
+    width:100px;
+    height:35px;
+    line-height:33px;
+    font-size:16px;
+    text-align: center;
+    border-radius:20px;
+    border:1px solid #fff;
+    color:#fff;
+}
+//方案内容
+
+.plan-content li .plan-img{
+    width:100%;
+    max-height:420px;
+}
+.plan-content>li{
+    display:none;
+}.plan-content>li>p{
+    font-size:14px;
+    color:#777777;
+}
+.plan-content .active{
+    display:block;
+}
+.plan-tit{
+    margin-top:45px;
+    font-size:30px;
+}
+.plan-mtit{
+    margin-top:25px;
+    font-size:18px;
+}
+.plan-td li{
+    padding:10px 0;
+}
+.plan-td li span{
+    margin-right:30px;
+    color:@baseColor;
+}
+.plan-bimg{
+    width:385px;
+}
+.plan-bimg img{
+    width:100%;
+}

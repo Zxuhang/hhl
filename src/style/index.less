@@ -1,0 +1,270 @@
+@baseColor:#16aff5;
+@baseFontColor:#323232;
+@baseFontColor1:#555555;
+
+p{
+	margin:0;
+	padding:0;
+}
+//swiper
+.swiper-container {
+    width: 100%;
+}  
+.swiper-container img{
+	max-width:100%;
+	min-height:200px;
+    // height:600px;
+}
+//互惠乐，一个专业的技术团队
+.hhl-summary-bg{
+	background:#fff;
+	padding:40px 0;
+}
+.hhl-summary>h3,.hhl-summary>p{
+	text-align: center;
+	margin-top:5px;
+	font-size: 17px;
+	color: @baseFontColor;
+}
+.hhl-summary>h3{	
+	margin-bottom:20px;
+	color:@baseColor;
+	font-size:30px;
+}
+.hhl-summary .row{
+	margin-top:20px;
+	// padding:0 40px;
+}
+.hhl-summary .row li{
+	padding-top:15px;
+}
+.hhl-summary ul li>div{
+	width:100%;
+	height:250px;
+	background:url(../images/index01.jpg) no-repeat;
+	background-size:100% 100%;
+	overflow: hidden;
+}
+.hhl-summary ul li:first-child>div{
+	background:url(../images/index02.jpg) no-repeat;
+}
+.hhl-summary ul li:last-child>div{
+	background:url(../images/index03.jpg) no-repeat;
+}
+
+.hhl-summary ul li>div>div{	
+	width:100%;
+	height:100%;
+	opacity: 0;
+	background: rgba(67,152,209,0.8);
+	display:flex;
+	display:-webkit-flex;
+	display:-ms-flex;
+	display:-moz-flex;
+	flex-direction:column;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	-moz-flex-direction:column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-moz-justify-content: space-between;
+	padding:30px 0;
+	// margin-top:251px;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-ms-transition:all 1s;
+	-moz-transition:all 1s;
+}
+.hhl-summary ul li:hover>div>div{
+	// margin-top:0;
+	opacity: 1;
+}
+.hhl-summary ul li>div>div h3{
+	font-size:35px;
+	margin:0;
+	color:#fff;
+}
+.hhl-summary ul li>div>div p{
+	font-size:18px;
+	// text-indent:40px;
+	padding:0 10px;
+	color:#fff;
+	margin:0;
+}
+.hhl-summary ul li>div>div a{
+	text-decoration:underline;
+	font-size:18px;
+}
+
+//栏目
+.hhl-column{
+	padding:30px 0;
+	color:#fff;
+}
+.dhhl-column h3{
+	margin-bottom:20px;
+}
+.hhl-column .row>li{
+	margin-top:20px;
+}
+.hhl-column ul li{
+	// height:210px;
+	padding-top:1px;
+}
+.hhl-column ul li div{
+	font-size:50px;
+}
+.hhl-column ul li h4{
+	font-size:22px;
+	margin-top:50px;
+}
+.hhl-column ul li p{
+	font-size:14px;
+}
+//我们做什么?
+.do-what{	
+	background:@baseColor;
+}
+.do-what ul li:after{
+	display: block;
+	content:'';
+	// box-shadow:0px 0px 2px 1px #fff;
+	width:2px;
+	height:165px;
+	border-radius: 1px;
+	// border-top-left-radius: 1px;
+	background:#fff;
+	position:absolute;
+	right:0;
+	top:23px;
+}
+.do-what ul li:last-child:after{
+	width:0;
+}
+
+//我们承诺
+.hhl-promise{
+	background:rgba(0,0,0,0.5)
+}
+.hhl-promise .iconfont{
+	color:@baseColor;
+}
+.hhl-promise ul li{
+	margin-top:30px;
+	height:300px;
+}
+
+//解决方案
+.hhl-solution{
+	background:#fff;
+	color:@baseFontColor1;
+}
+.hhl-solution a{
+	color:@baseFontColor1;
+}
+.hhl-solution .row li>div{	
+	height:300px;
+	background:#f3f3f3;
+	padding-bottom:30px;
+	padding:0 18px;
+	padding-bottom:15px;
+	overflow: hidden;
+	// height:400px;
+}
+.hhl-solution .row li h3{
+	margin-bottom:0;
+	font-size:16px;
+	padding:12px 18px;
+	margin:0 -18px;
+	font-weight:none;
+	color:#fff;
+	background: @baseColor;
+}
+.hhl-solution .row li .iconfont{
+	color:@baseColor;
+}
+.hhl-solution .row .so-line{
+	box-sizing: border-box;
+	background:#d1d1d1;
+	height:2px;
+	width:100%;
+	margin:10px 0px;
+}
+.hhl-solution .row li ul li span{
+	font-size:15px;
+	font-weight: bold;
+}
+
+//项目案例
+.hhl-case{
+	background:#fff;
+	padding-bottom:30px;
+}
+.hhl-case .case-logo{
+	width:80px;
+	height:80px;
+	background:url(../images/xfxy.png) no-repeat;
+	background-size: 100%;
+	margin:15px auto;
+}
+.hhl-case ul li:nth-child(2) .case-logo{
+	background:url(../images/bgsc.png) no-repeat;
+	background-size: 100%;
+	background-position-y: center;
+}
+.hhl-case ul li:nth-child(3) .case-logo{
+	background:url(../images/hbzt.png) no-repeat;
+	background-size: 100%;
+	background-position-y: center;
+}
+.hhl-case ul li:nth-child(4) .case-logo{
+	background:url(../images/jhsc.png) no-repeat;
+	background-size: 100%;
+	background-position-y: center;
+}
+.hhl-case .case-title{
+	background:@baseColor;
+	padding:12px 0;
+}
+.case-title h3{
+	font-size: 30px;
+	margin:0;
+}
+.case-title h4{
+	font-size: 18px;
+	margin:0;
+}
+.hhl-case .row li{
+	padding-top:30px;
+	color:@baseFontColor1;
+}
+.hhl-case ul li>a{
+	display:block;
+	color:@baseFontColor;
+	padding:0 30px;
+	background:#f3f3f3;
+	overflow: hidden;
+	height: 320px;
+}
+.hhl-case ul li>a:hover{
+	box-shadow:0 0 10px #aaa;
+}
+.hhl-case .row li h3{
+	font-size:18px;
+	margin:10px 0;
+	font-weight: bold;
+}
+.hhl-case .row li h4{
+	font-size:16px;
+	// margin:10px 0;
+	padding-top:3px;
+	font-weight: bold;
+}
+.hhl-case .case-brief{
+	margin:0 auto;
+	// width:130px;
+}
+.hhl-case .case-brief p{
+	flex:1;
+}
